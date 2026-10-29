@@ -1,0 +1,370 @@
+﻿date,site,niveau,code_niveau,code_variete,indice,variation_jour_pct,nb_produits,nb_varietes,methode
+2026-09-22,Tous sites,variete,010101030105,010101030105,100.0,,11,,base
+2026-10-24,Tous sites,variete,010101030105,010101030105,100.0,0.0,11,,jevons_base_fixe
+2026-10-29,Tous sites,variete,010101030105,010101030105,100.0,0.0,11,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010102020102,010102020102,100.0,,1,,base
+2026-10-24,Tous sites,variete,010102020102,010102020102,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010102020202,010102020202,100.0,,1,,base
+2026-10-24,Tous sites,variete,010102020202,010102020202,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010102030001,010102030001,100.0,,1,,base
+2026-10-24,Tous sites,variete,010102030001,010102030001,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010103010003,010103010003,100.0,,1,,base
+2026-10-24,Tous sites,variete,010103010003,010103010003,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010103010004,010103010004,100.0,,2,,base
+2026-10-24,Tous sites,variete,010103010004,010103010004,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010103010008,010103010008,100.0,,1,,base
+2026-10-24,Tous sites,variete,010103010008,010103010008,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010103010009,010103010009,100.0,,2,,base
+2026-10-24,Tous sites,variete,010103010009,010103010009,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010103010010,010103010010,100.0,,2,,base
+2026-10-24,Tous sites,variete,010103010010,010103010010,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010105010006,010105010006,100.0,,1,,base
+2026-10-24,Tous sites,variete,010105010006,010105010006,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010105030002,010105030002,100.0,,1,,base
+2026-10-24,Tous sites,variete,010105030002,010105030002,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010106010202,010106010202,100.0,,1,,base
+2026-10-24,Tous sites,variete,010106010202,010106010202,100.0,0.0,1,,jevons_base_fixe
+2026-10-27,Tous sites,variete,010106010202,010106010202,100.0,0.0,1,,jevons_base_fixe
+2026-10-28,Tous sites,variete,010106010202,010106010202,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010106010207,010106010207,100.0,,1,,base
+2026-10-24,Tous sites,variete,010106010207,010106010207,100.0,0.0,1,,jevons_base_fixe
+2026-10-27,Tous sites,variete,010106010207,010106010207,100.0,0.0,1,,jevons_base_fixe
+2026-10-28,Tous sites,variete,010106010207,010106010207,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010106010208,010106010208,100.0,,2,,base
+2026-10-24,Tous sites,variete,010106010208,010106010208,100.0,0.0,2,,jevons_base_fixe
+2026-10-27,Tous sites,variete,010106010208,010106010208,100.0,0.0,2,,jevons_base_fixe
+2026-10-28,Tous sites,variete,010106010208,010106010208,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010106080005,010106080005,100.0,,1,,base
+2026-10-24,Tous sites,variete,010106080005,010106080005,100.0,0.0,1,,jevons_base_fixe
+2026-10-29,Tous sites,variete,010106080005,010106080005,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010107020001,010107020001,100.0,,2,,base
+2026-10-24,Tous sites,variete,010107020001,010107020001,100.0,0.0,2,,jevons_base_fixe
+2026-10-27,Tous sites,variete,010107020001,010107020001,100.0,0.0,2,,jevons_base_fixe
+2026-10-28,Tous sites,variete,010107020001,010107020001,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010107020010,010107020010,100.0,,1,,base
+2026-10-24,Tous sites,variete,010107020010,010107020010,100.0,0.0,1,,jevons_base_fixe
+2026-10-27,Tous sites,variete,010107020010,010107020010,100.0,0.0,1,,jevons_base_fixe
+2026-10-28,Tous sites,variete,010107020010,010107020010,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010107040006,010107040006,100.0,,1,,base
+2026-10-24,Tous sites,variete,010107040006,010107040006,100.0,0.0,1,,jevons_base_fixe
+2026-10-27,Tous sites,variete,010107040006,010107040006,100.0,0.0,1,,jevons_base_fixe
+2026-10-28,Tous sites,variete,010107040006,010107040006,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010107050201,010107050201,100.0,,1,,base
+2026-10-24,Tous sites,variete,010107050201,010107050201,100.0,0.0,1,,jevons_base_fixe
+2026-10-27,Tous sites,variete,010107050201,010107050201,50.0,-50.0,1,,jevons_base_fixe
+2026-10-28,Tous sites,variete,010107050201,010107050201,50.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010109020002,010109020002,100.0,,4,,base
+2026-10-24,Tous sites,variete,010109020002,010109020002,100.0,0.0,4,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010109030005,010109030005,100.0,,1,,base
+2026-10-24,Tous sites,variete,010109030005,010109030005,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010109030007,010109030007,100.0,,2,,base
+2026-10-24,Tous sites,variete,010109030007,010109030007,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010109030009,010109030009,100.0,,1,,base
+2026-10-24,Tous sites,variete,010109030009,010109030009,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010109090001,010109090001,100.0,,1,,base
+2026-10-24,Tous sites,variete,010109090001,010109090001,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,010109090002,010109090002,100.0,,1,,base
+2026-10-24,Tous sites,variete,010109090002,010109090002,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,030103010005,030103010005,100.0,,1,,base
+2026-10-24,Tous sites,variete,030103010005,030103010005,100.0,0.0,1,,jevons_base_fixe
+2026-10-27,Tous sites,variete,030103010005,030103010005,100.0,0.0,1,,jevons_base_fixe
+2026-10-28,Tous sites,variete,030103010005,030103010005,100.0,0.0,1,,jevons_base_fixe
+2026-10-29,Tous sites,variete,030103010005,030103010005,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,050301010002,050301010002,100.0,,3,,base
+2026-10-24,Tous sites,variete,050301010002,050301010002,100.0,0.0,3,,jevons_base_fixe
+2026-10-27,Tous sites,variete,050301010002,050301010002,100.0,0.0,3,,jevons_base_fixe
+2026-10-28,Tous sites,variete,050301010002,050301010002,100.0,0.0,3,,jevons_base_fixe
+2026-10-29,Tous sites,variete,050301010002,050301010002,100.0,0.0,3,,jevons_base_fixe
+2026-09-22,Tous sites,variete,050301010003,050301010003,100.0,,1,,base
+2026-10-24,Tous sites,variete,050301010003,050301010003,100.0,0.0,1,,jevons_base_fixe
+2026-10-27,Tous sites,variete,050301010003,050301010003,100.0,0.0,1,,jevons_base_fixe
+2026-10-28,Tous sites,variete,050301010003,050301010003,100.0,0.0,1,,jevons_base_fixe
+2026-10-29,Tous sites,variete,050301010003,050301010003,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,050301010004,050301010004,100.0,,2,,base
+2026-10-24,Tous sites,variete,050301010004,050301010004,100.0,0.0,2,,jevons_base_fixe
+2026-10-27,Tous sites,variete,050301010004,050301010004,100.0,0.0,2,,jevons_base_fixe
+2026-10-28,Tous sites,variete,050301010004,050301010004,100.0,0.0,2,,jevons_base_fixe
+2026-10-29,Tous sites,variete,050301010004,050301010004,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,Tous sites,variete,050301020001,050301020001,100.0,,2,,base
+2026-10-24,Tous sites,variete,050301020001,050301020001,100.0,0.0,2,,jevons_base_fixe
+2026-10-27,Tous sites,variete,050301020001,050301020001,100.0,0.0,2,,jevons_base_fixe
+2026-10-28,Tous sites,variete,050301020001,050301020001,100.0,0.0,2,,jevons_base_fixe
+2026-10-29,Tous sites,variete,050301020001,050301020001,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,Tous sites,variete,050301030001,050301030001,100.0,,3,,base
+2026-10-24,Tous sites,variete,050301030001,050301030001,100.0,0.0,3,,jevons_base_fixe
+2026-10-27,Tous sites,variete,050301030001,050301030001,100.0,0.0,3,,jevons_base_fixe
+2026-10-28,Tous sites,variete,050301030001,050301030001,100.0,0.0,3,,jevons_base_fixe
+2026-10-29,Tous sites,variete,050301030001,050301030001,100.0,0.0,3,,jevons_base_fixe
+2026-09-22,Tous sites,variete,050302010202,050302010202,100.0,,2,,base
+2026-10-24,Tous sites,variete,050302010202,050302010202,100.0,0.0,2,,jevons_base_fixe
+2026-10-27,Tous sites,variete,050302010202,050302010202,100.0,0.0,2,,jevons_base_fixe
+2026-10-28,Tous sites,variete,050302010202,050302010202,100.0,0.0,2,,jevons_base_fixe
+2026-10-29,Tous sites,variete,050302010202,050302010202,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,Tous sites,variete,050601010204,050601010204,100.0,,1,,base
+2026-10-24,Tous sites,variete,050601010204,050601010204,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,060102030005,060102030005,100.0,,1,,base
+2026-10-24,Tous sites,variete,060102030005,060102030005,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,080104000003,080104000003,100.0,,9,,base
+2026-10-24,Tous sites,variete,080104000003,080104000003,100.0,0.0,9,,jevons_base_fixe
+2026-10-27,Tous sites,variete,080104000003,080104000003,100.0,0.0,9,,jevons_base_fixe
+2026-10-28,Tous sites,variete,080104000003,080104000003,100.0,0.0,9,,jevons_base_fixe
+2026-10-29,Tous sites,variete,080104000003,080104000003,100.0,0.0,8,,jevons_base_fixe
+2026-09-22,Tous sites,variete,130102000306,130102000306,100.0,,1,,base
+2026-10-24,Tous sites,variete,130102000306,130102000306,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,Tous sites,variete,130209010901,130209010901,100.0,,2,,base
+2026-10-24,Tous sites,variete,130209010901,130209010901,100.0,0.0,2,,jevons_base_fixe
+2026-10-27,Tous sites,variete,130209010901,130209010901,100.0,0.0,2,,jevons_base_fixe
+2026-10-28,Tous sites,variete,130209010901,130209010901,100.0,0.0,2,,jevons_base_fixe
+2026-10-29,Tous sites,variete,130209010901,130209010901,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,adjovan,variete,010101030105,010101030105,100.0,,11,,base
+2026-10-24,adjovan,variete,010101030105,010101030105,100.0,0.0,11,,jevons_base_fixe
+2026-10-29,adjovan,variete,010101030105,010101030105,100.0,0.0,11,,jevons_base_fixe
+2026-09-22,adjovan,variete,010102020102,010102020102,100.0,,1,,base
+2026-10-24,adjovan,variete,010102020102,010102020102,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010102020202,010102020202,100.0,,1,,base
+2026-10-24,adjovan,variete,010102020202,010102020202,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010102030001,010102030001,100.0,,1,,base
+2026-10-24,adjovan,variete,010102030001,010102030001,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010103010003,010103010003,100.0,,1,,base
+2026-10-24,adjovan,variete,010103010003,010103010003,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010103010004,010103010004,100.0,,2,,base
+2026-10-24,adjovan,variete,010103010004,010103010004,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,adjovan,variete,010103010008,010103010008,100.0,,1,,base
+2026-10-24,adjovan,variete,010103010008,010103010008,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010103010009,010103010009,100.0,,2,,base
+2026-10-24,adjovan,variete,010103010009,010103010009,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,adjovan,variete,010103010010,010103010010,100.0,,2,,base
+2026-10-24,adjovan,variete,010103010010,010103010010,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,adjovan,variete,010105010006,010105010006,100.0,,1,,base
+2026-10-24,adjovan,variete,010105010006,010105010006,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010105030002,010105030002,100.0,,1,,base
+2026-10-24,adjovan,variete,010105030002,010105030002,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010106010202,010106010202,100.0,,1,,base
+2026-10-24,adjovan,variete,010106010202,010106010202,100.0,0.0,1,,jevons_base_fixe
+2026-10-27,adjovan,variete,010106010202,010106010202,100.0,0.0,1,,jevons_base_fixe
+2026-10-28,adjovan,variete,010106010202,010106010202,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010106010207,010106010207,100.0,,1,,base
+2026-10-24,adjovan,variete,010106010207,010106010207,100.0,0.0,1,,jevons_base_fixe
+2026-10-27,adjovan,variete,010106010207,010106010207,100.0,0.0,1,,jevons_base_fixe
+2026-10-28,adjovan,variete,010106010207,010106010207,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010106010208,010106010208,100.0,,2,,base
+2026-10-24,adjovan,variete,010106010208,010106010208,100.0,0.0,2,,jevons_base_fixe
+2026-10-27,adjovan,variete,010106010208,010106010208,100.0,0.0,2,,jevons_base_fixe
+2026-10-28,adjovan,variete,010106010208,010106010208,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,adjovan,variete,010106080005,010106080005,100.0,,1,,base
+2026-10-24,adjovan,variete,010106080005,010106080005,100.0,0.0,1,,jevons_base_fixe
+2026-10-29,adjovan,variete,010106080005,010106080005,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010107020001,010107020001,100.0,,2,,base
+2026-10-24,adjovan,variete,010107020001,010107020001,100.0,0.0,2,,jevons_base_fixe
+2026-10-27,adjovan,variete,010107020001,010107020001,100.0,0.0,2,,jevons_base_fixe
+2026-10-28,adjovan,variete,010107020001,010107020001,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,adjovan,variete,010107020010,010107020010,100.0,,1,,base
+2026-10-24,adjovan,variete,010107020010,010107020010,100.0,0.0,1,,jevons_base_fixe
+2026-10-27,adjovan,variete,010107020010,010107020010,100.0,0.0,1,,jevons_base_fixe
+2026-10-28,adjovan,variete,010107020010,010107020010,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010107040006,010107040006,100.0,,1,,base
+2026-10-24,adjovan,variete,010107040006,010107040006,100.0,0.0,1,,jevons_base_fixe
+2026-10-27,adjovan,variete,010107040006,010107040006,100.0,0.0,1,,jevons_base_fixe
+2026-10-28,adjovan,variete,010107040006,010107040006,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010107050201,010107050201,100.0,,1,,base
+2026-10-24,adjovan,variete,010107050201,010107050201,100.0,0.0,1,,jevons_base_fixe
+2026-10-27,adjovan,variete,010107050201,010107050201,50.0,-50.0,1,,jevons_base_fixe
+2026-10-28,adjovan,variete,010107050201,010107050201,50.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010109020002,010109020002,100.0,,4,,base
+2026-10-24,adjovan,variete,010109020002,010109020002,100.0,0.0,4,,jevons_base_fixe
+2026-09-22,adjovan,variete,010109030005,010109030005,100.0,,1,,base
+2026-10-24,adjovan,variete,010109030005,010109030005,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010109030007,010109030007,100.0,,2,,base
+2026-10-24,adjovan,variete,010109030007,010109030007,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,adjovan,variete,010109030009,010109030009,100.0,,1,,base
+2026-10-24,adjovan,variete,010109030009,010109030009,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010109090001,010109090001,100.0,,1,,base
+2026-10-24,adjovan,variete,010109090001,010109090001,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,010109090002,010109090002,100.0,,1,,base
+2026-10-24,adjovan,variete,010109090002,010109090002,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,050601010204,050601010204,100.0,,1,,base
+2026-10-24,adjovan,variete,050601010204,050601010204,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,060102030005,060102030005,100.0,,1,,base
+2026-10-24,adjovan,variete,060102030005,060102030005,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,adjovan,variete,130102000306,130102000306,100.0,,1,,base
+2026-10-24,adjovan,variete,130102000306,130102000306,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,ivoirshop,variete,030103010005,030103010005,100.0,,1,,base
+2026-10-24,ivoirshop,variete,030103010005,030103010005,100.0,0.0,1,,jevons_base_fixe
+2026-10-27,ivoirshop,variete,030103010005,030103010005,100.0,0.0,1,,jevons_base_fixe
+2026-10-28,ivoirshop,variete,030103010005,030103010005,100.0,0.0,1,,jevons_base_fixe
+2026-10-29,ivoirshop,variete,030103010005,030103010005,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,ivoirshop,variete,050301010002,050301010002,100.0,,3,,base
+2026-10-24,ivoirshop,variete,050301010002,050301010002,100.0,0.0,3,,jevons_base_fixe
+2026-10-27,ivoirshop,variete,050301010002,050301010002,100.0,0.0,3,,jevons_base_fixe
+2026-10-28,ivoirshop,variete,050301010002,050301010002,100.0,0.0,3,,jevons_base_fixe
+2026-10-29,ivoirshop,variete,050301010002,050301010002,100.0,0.0,3,,jevons_base_fixe
+2026-09-22,ivoirshop,variete,050301010003,050301010003,100.0,,1,,base
+2026-10-24,ivoirshop,variete,050301010003,050301010003,100.0,0.0,1,,jevons_base_fixe
+2026-10-27,ivoirshop,variete,050301010003,050301010003,100.0,0.0,1,,jevons_base_fixe
+2026-10-28,ivoirshop,variete,050301010003,050301010003,100.0,0.0,1,,jevons_base_fixe
+2026-10-29,ivoirshop,variete,050301010003,050301010003,100.0,0.0,1,,jevons_base_fixe
+2026-09-22,ivoirshop,variete,050301010004,050301010004,100.0,,2,,base
+2026-10-24,ivoirshop,variete,050301010004,050301010004,100.0,0.0,2,,jevons_base_fixe
+2026-10-27,ivoirshop,variete,050301010004,050301010004,100.0,0.0,2,,jevons_base_fixe
+2026-10-28,ivoirshop,variete,050301010004,050301010004,100.0,0.0,2,,jevons_base_fixe
+2026-10-29,ivoirshop,variete,050301010004,050301010004,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,ivoirshop,variete,050301020001,050301020001,100.0,,2,,base
+2026-10-24,ivoirshop,variete,050301020001,050301020001,100.0,0.0,2,,jevons_base_fixe
+2026-10-27,ivoirshop,variete,050301020001,050301020001,100.0,0.0,2,,jevons_base_fixe
+2026-10-28,ivoirshop,variete,050301020001,050301020001,100.0,0.0,2,,jevons_base_fixe
+2026-10-29,ivoirshop,variete,050301020001,050301020001,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,ivoirshop,variete,050301030001,050301030001,100.0,,3,,base
+2026-10-24,ivoirshop,variete,050301030001,050301030001,100.0,0.0,3,,jevons_base_fixe
+2026-10-27,ivoirshop,variete,050301030001,050301030001,100.0,0.0,3,,jevons_base_fixe
+2026-10-28,ivoirshop,variete,050301030001,050301030001,100.0,0.0,3,,jevons_base_fixe
+2026-10-29,ivoirshop,variete,050301030001,050301030001,100.0,0.0,3,,jevons_base_fixe
+2026-09-22,ivoirshop,variete,050302010202,050302010202,100.0,,2,,base
+2026-10-24,ivoirshop,variete,050302010202,050302010202,100.0,0.0,2,,jevons_base_fixe
+2026-10-27,ivoirshop,variete,050302010202,050302010202,100.0,0.0,2,,jevons_base_fixe
+2026-10-28,ivoirshop,variete,050302010202,050302010202,100.0,0.0,2,,jevons_base_fixe
+2026-10-29,ivoirshop,variete,050302010202,050302010202,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,ivoirshop,variete,080104000003,080104000003,100.0,,9,,base
+2026-10-24,ivoirshop,variete,080104000003,080104000003,100.0,0.0,9,,jevons_base_fixe
+2026-10-27,ivoirshop,variete,080104000003,080104000003,100.0,0.0,9,,jevons_base_fixe
+2026-10-28,ivoirshop,variete,080104000003,080104000003,100.0,0.0,9,,jevons_base_fixe
+2026-10-29,ivoirshop,variete,080104000003,080104000003,100.0,0.0,8,,jevons_base_fixe
+2026-09-22,ivoirshop,variete,130209010901,130209010901,100.0,,2,,base
+2026-10-24,ivoirshop,variete,130209010901,130209010901,100.0,0.0,2,,jevons_base_fixe
+2026-10-27,ivoirshop,variete,130209010901,130209010901,100.0,0.0,2,,jevons_base_fixe
+2026-10-28,ivoirshop,variete,130209010901,130209010901,100.0,0.0,2,,jevons_base_fixe
+2026-10-29,ivoirshop,variete,130209010901,130209010901,100.0,0.0,2,,jevons_base_fixe
+2026-09-22,Tous sites,coicop_2,01,,100.0,,44,25.0,young_pondere
+2026-09-22,Tous sites,coicop_2,03,,100.0,,1,1.0,young_pondere
+2026-09-22,Tous sites,coicop_2,05,,100.0,,14,7.0,young_pondere
+2026-09-22,Tous sites,coicop_2,06,,100.0,,1,1.0,young_pondere
+2026-09-22,Tous sites,coicop_2,08,,100.0,,9,1.0,young_pondere
+2026-09-22,Tous sites,coicop_2,13,,100.0,,3,2.0,young_pondere
+2026-09-22,Tous sites,coicop_4,0101,,100.0,,44,25.0,young_pondere
+2026-09-22,Tous sites,coicop_4,0301,,100.0,,1,1.0,young_pondere
+2026-09-22,Tous sites,coicop_4,0503,,100.0,,13,6.0,young_pondere
+2026-09-22,Tous sites,coicop_4,0506,,100.0,,1,1.0,young_pondere
+2026-09-22,Tous sites,coicop_4,0601,,100.0,,1,1.0,young_pondere
+2026-09-22,Tous sites,coicop_4,0801,,100.0,,9,1.0,young_pondere
+2026-09-22,Tous sites,coicop_4,1301,,100.0,,1,1.0,young_pondere
+2026-09-22,Tous sites,coicop_4,1302,,100.0,,2,1.0,young_pondere
+2026-09-22,Tous sites,global,TOUS,,100.0,,72,37.0,young_pondere
+2026-10-24,Tous sites,coicop_2,01,,100.0,0.0,44,25.0,young_pondere
+2026-10-24,Tous sites,coicop_2,03,,100.0,0.0,1,1.0,young_pondere
+2026-10-24,Tous sites,coicop_2,05,,100.0,0.0,14,7.0,young_pondere
+2026-10-24,Tous sites,coicop_2,06,,100.0,0.0,1,1.0,young_pondere
+2026-10-24,Tous sites,coicop_2,08,,100.0,0.0,9,1.0,young_pondere
+2026-10-24,Tous sites,coicop_2,13,,100.0,0.0,3,2.0,young_pondere
+2026-10-24,Tous sites,coicop_4,0101,,100.0,0.0,44,25.0,young_pondere
+2026-10-24,Tous sites,coicop_4,0301,,100.0,0.0,1,1.0,young_pondere
+2026-10-24,Tous sites,coicop_4,0503,,100.0,0.0,13,6.0,young_pondere
+2026-10-24,Tous sites,coicop_4,0506,,100.0,0.0,1,1.0,young_pondere
+2026-10-24,Tous sites,coicop_4,0601,,100.0,0.0,1,1.0,young_pondere
+2026-10-24,Tous sites,coicop_4,0801,,100.0,0.0,9,1.0,young_pondere
+2026-10-24,Tous sites,coicop_4,1301,,100.0,0.0,1,1.0,young_pondere
+2026-10-24,Tous sites,coicop_4,1302,,100.0,0.0,2,1.0,young_pondere
+2026-10-24,Tous sites,global,TOUS,,100.0,0.0,72,37.0,young_pondere
+2026-10-27,Tous sites,coicop_2,01,,91.10560611845693,-8.894393881543072,9,7.0,young_pondere
+2026-10-27,Tous sites,coicop_2,03,,100.0,0.0,1,1.0,young_pondere
+2026-10-27,Tous sites,coicop_2,05,,100.0,0.0,13,6.0,young_pondere
+2026-10-27,Tous sites,coicop_2,08,,100.0,0.0,9,1.0,young_pondere
+2026-10-27,Tous sites,coicop_2,13,,100.0,0.0,2,1.0,young_pondere
+2026-10-27,Tous sites,coicop_4,0101,,91.10560611845693,-8.894393881543072,9,7.0,young_pondere
+2026-10-27,Tous sites,coicop_4,0301,,100.0,0.0,1,1.0,young_pondere
+2026-10-27,Tous sites,coicop_4,0503,,100.0,0.0,13,6.0,young_pondere
+2026-10-27,Tous sites,coicop_4,0801,,100.0,0.0,9,1.0,young_pondere
+2026-10-27,Tous sites,coicop_4,1302,,100.0,0.0,2,1.0,young_pondere
+2026-10-27,Tous sites,global,TOUS,,96.58512399848027,-3.414876001519729,34,16.0,young_pondere
+2026-10-28,Tous sites,coicop_2,01,,91.10560611845693,0.0,9,7.0,young_pondere
+2026-10-28,Tous sites,coicop_2,03,,100.0,0.0,1,1.0,young_pondere
+2026-10-28,Tous sites,coicop_2,05,,100.0,0.0,13,6.0,young_pondere
+2026-10-28,Tous sites,coicop_2,08,,100.0,0.0,9,1.0,young_pondere
+2026-10-28,Tous sites,coicop_2,13,,100.0,0.0,2,1.0,young_pondere
+2026-10-28,Tous sites,coicop_4,0101,,91.10560611845693,0.0,9,7.0,young_pondere
+2026-10-28,Tous sites,coicop_4,0301,,100.0,0.0,1,1.0,young_pondere
+2026-10-28,Tous sites,coicop_4,0503,,100.0,0.0,13,6.0,young_pondere
+2026-10-28,Tous sites,coicop_4,0801,,100.0,0.0,9,1.0,young_pondere
+2026-10-28,Tous sites,coicop_4,1302,,100.0,0.0,2,1.0,young_pondere
+2026-10-28,Tous sites,global,TOUS,,96.58512399848027,0.0,34,16.0,young_pondere
+2026-10-29,Tous sites,coicop_2,01,,100.0,9.762729496556389,12,2.0,young_pondere
+2026-10-29,Tous sites,coicop_2,03,,100.0,0.0,1,1.0,young_pondere
+2026-10-29,Tous sites,coicop_2,05,,100.0,0.0,13,6.0,young_pondere
+2026-10-29,Tous sites,coicop_2,08,,100.0,0.0,8,1.0,young_pondere
+2026-10-29,Tous sites,coicop_2,13,,100.0,0.0,2,1.0,young_pondere
+2026-10-29,Tous sites,coicop_4,0101,,100.0,9.762729496556389,12,2.0,young_pondere
+2026-10-29,Tous sites,coicop_4,0301,,100.0,0.0,1,1.0,young_pondere
+2026-10-29,Tous sites,coicop_4,0503,,100.0,0.0,13,6.0,young_pondere
+2026-10-29,Tous sites,coicop_4,0801,,100.0,0.0,8,1.0,young_pondere
+2026-10-29,Tous sites,coicop_4,1302,,100.0,0.0,2,1.0,young_pondere
+2026-10-29,Tous sites,global,TOUS,,100.0,3.535612794340315,36,11.0,young_pondere
+2026-09-22,adjovan,coicop_2,01,,100.0,,44,25.0,young_pondere
+2026-09-22,adjovan,coicop_2,05,,100.0,,1,1.0,young_pondere
+2026-09-22,adjovan,coicop_2,06,,100.0,,1,1.0,young_pondere
+2026-09-22,adjovan,coicop_2,13,,100.0,,1,1.0,young_pondere
+2026-09-22,adjovan,coicop_4,0101,,100.0,,44,25.0,young_pondere
+2026-09-22,adjovan,coicop_4,0506,,100.0,,1,1.0,young_pondere
+2026-09-22,adjovan,coicop_4,0601,,100.0,,1,1.0,young_pondere
+2026-09-22,adjovan,coicop_4,1301,,100.0,,1,1.0,young_pondere
+2026-09-22,adjovan,global,TOUS,,100.0,,47,28.0,young_pondere
+2026-10-24,adjovan,coicop_2,01,,100.0,0.0,44,25.0,young_pondere
+2026-10-24,adjovan,coicop_2,05,,100.0,0.0,1,1.0,young_pondere
+2026-10-24,adjovan,coicop_2,06,,100.0,0.0,1,1.0,young_pondere
+2026-10-24,adjovan,coicop_2,13,,100.0,0.0,1,1.0,young_pondere
+2026-10-24,adjovan,coicop_4,0101,,100.0,0.0,44,25.0,young_pondere
+2026-10-24,adjovan,coicop_4,0506,,100.0,0.0,1,1.0,young_pondere
+2026-10-24,adjovan,coicop_4,0601,,100.0,0.0,1,1.0,young_pondere
+2026-10-24,adjovan,coicop_4,1301,,100.0,0.0,1,1.0,young_pondere
+2026-10-24,adjovan,global,TOUS,,100.0,0.0,47,28.0,young_pondere
+2026-10-27,adjovan,coicop_2,01,,91.10560611845693,-8.894393881543072,9,7.0,young_pondere
+2026-10-27,adjovan,coicop_4,0101,,91.10560611845693,-8.894393881543072,9,7.0,young_pondere
+2026-10-27,adjovan,global,TOUS,,91.10560611845693,-8.894393881543072,9,7.0,young_pondere
+2026-10-28,adjovan,coicop_2,01,,91.10560611845693,0.0,9,7.0,young_pondere
+2026-10-28,adjovan,coicop_4,0101,,91.10560611845693,0.0,9,7.0,young_pondere
+2026-10-28,adjovan,global,TOUS,,91.10560611845693,0.0,9,7.0,young_pondere
+2026-10-29,adjovan,coicop_2,01,,100.0,9.762729496556389,12,2.0,young_pondere
+2026-10-29,adjovan,coicop_4,0101,,100.0,9.762729496556389,12,2.0,young_pondere
+2026-10-29,adjovan,global,TOUS,,100.0,9.762729496556389,12,2.0,young_pondere
+2026-09-22,ivoirshop,coicop_2,03,,100.0,,1,1.0,young_pondere
+2026-09-22,ivoirshop,coicop_2,05,,100.0,,13,6.0,young_pondere
+2026-09-22,ivoirshop,coicop_2,08,,100.0,,9,1.0,young_pondere
+2026-09-22,ivoirshop,coicop_2,13,,100.0,,2,1.0,young_pondere
+2026-09-22,ivoirshop,coicop_4,0301,,100.0,,1,1.0,young_pondere
+2026-09-22,ivoirshop,coicop_4,0503,,100.0,,13,6.0,young_pondere
+2026-09-22,ivoirshop,coicop_4,0801,,100.0,,9,1.0,young_pondere
+2026-09-22,ivoirshop,coicop_4,1302,,100.0,,2,1.0,young_pondere
+2026-09-22,ivoirshop,global,TOUS,,100.0,,25,9.0,young_pondere
+2026-10-24,ivoirshop,coicop_2,03,,100.0,0.0,1,1.0,young_pondere
+2026-10-24,ivoirshop,coicop_2,05,,100.0,0.0,13,6.0,young_pondere
+2026-10-24,ivoirshop,coicop_2,08,,100.0,0.0,9,1.0,young_pondere
+2026-10-24,ivoirshop,coicop_2,13,,100.0,0.0,2,1.0,young_pondere
+2026-10-24,ivoirshop,coicop_4,0301,,100.0,0.0,1,1.0,young_pondere
+2026-10-24,ivoirshop,coicop_4,0503,,100.0,0.0,13,6.0,young_pondere
+2026-10-24,ivoirshop,coicop_4,0801,,100.0,0.0,9,1.0,young_pondere
+2026-10-24,ivoirshop,coicop_4,1302,,100.0,0.0,2,1.0,young_pondere
+2026-10-24,ivoirshop,global,TOUS,,100.0,0.0,25,9.0,young_pondere
+2026-10-27,ivoirshop,coicop_2,03,,100.0,0.0,1,1.0,young_pondere
+2026-10-27,ivoirshop,coicop_2,05,,100.0,0.0,13,6.0,young_pondere
+2026-10-27,ivoirshop,coicop_2,08,,100.0,0.0,9,1.0,young_pondere
+2026-10-27,ivoirshop,coicop_2,13,,100.0,0.0,2,1.0,young_pondere
+2026-10-27,ivoirshop,coicop_4,0301,,100.0,0.0,1,1.0,young_pondere
+2026-10-27,ivoirshop,coicop_4,0503,,100.0,0.0,13,6.0,young_pondere
+2026-10-27,ivoirshop,coicop_4,0801,,100.0,0.0,9,1.0,young_pondere
+2026-10-27,ivoirshop,coicop_4,1302,,100.0,0.0,2,1.0,young_pondere
+2026-10-27,ivoirshop,global,TOUS,,100.0,0.0,25,9.0,young_pondere
+2026-10-28,ivoirshop,coicop_2,03,,100.0,0.0,1,1.0,young_pondere
+2026-10-28,ivoirshop,coicop_2,05,,100.0,0.0,13,6.0,young_pondere
+2026-10-28,ivoirshop,coicop_2,08,,100.0,0.0,9,1.0,young_pondere
+2026-10-28,ivoirshop,coicop_2,13,,100.0,0.0,2,1.0,young_pondere
+2026-10-28,ivoirshop,coicop_4,0301,,100.0,0.0,1,1.0,young_pondere
+2026-10-28,ivoirshop,coicop_4,0503,,100.0,0.0,13,6.0,young_pondere
+2026-10-28,ivoirshop,coicop_4,0801,,100.0,0.0,9,1.0,young_pondere
+2026-10-28,ivoirshop,coicop_4,1302,,100.0,0.0,2,1.0,young_pondere
+2026-10-28,ivoirshop,global,TOUS,,100.0,0.0,25,9.0,young_pondere
+2026-10-29,ivoirshop,coicop_2,03,,100.0,0.0,1,1.0,young_pondere
+2026-10-29,ivoirshop,coicop_2,05,,100.0,0.0,13,6.0,young_pondere
+2026-10-29,ivoirshop,coicop_2,08,,100.0,0.0,8,1.0,young_pondere
+2026-10-29,ivoirshop,coicop_2,13,,100.0,0.0,2,1.0,young_pondere
+2026-10-29,ivoirshop,coicop_4,0301,,100.0,0.0,1,1.0,young_pondere
+2026-10-29,ivoirshop,coicop_4,0503,,100.0,0.0,13,6.0,young_pondere
+2026-10-29,ivoirshop,coicop_4,0801,,100.0,0.0,8,1.0,young_pondere
+2026-10-29,ivoirshop,coicop_4,1302,,100.0,0.0,2,1.0,young_pondere
+2026-10-29,ivoirshop,global,TOUS,,100.0,0.0,24,9.0,young_pondere
