@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120" role="img" aria-label="Placeholder Anstat">
+  <rect width="420" height="120" rx="14" fill="#ffffff"/>
+  <path d="M22 88 57 20l35 68H75L57 52 40 88Z" fill="#F39323"/>
+  <text x="100" y="68" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#49655A">nstat</text>
+  <text x="24" y="108" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#555454">AGENCE NATIONALE DE LA STATISTIQUE</text>
+</svg>

@@ -7,14 +7,86 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+# Palette ANSTAT centralisée pour garder une identité cohérente.
+CHARTE = {
+    "orange": "#F39323", "vert": "#49655A", "orange_fonce": "#EF7911",
+    "orange_ambre": "#F6A000", "jaune": "#FCBF00", "jaune_clair": "#FAEA26",
+    "vert_fonce": "#0C6B23", "vert_turquoise": "#0A966F", "vert_vif": "#13A538",
+    "vert_clair": "#8CC048", "noir": "#1D1D1B", "gris_fonce": "#555454",
+    "gris": "#9F9F9F", "gris_clair": "#CCCCCC", "fond": "#FAFAF7",
+}
+PALETTE_ANSTAT = [CHARTE[k] for k in ("orange", "vert", "vert_turquoise", "orange_ambre", "vert_clair", "vert_fonce", "orange_fonce", "gris_fonce", "jaune", "gris")]
+
 DOSSIER = Path(__file__).resolve().parent
 DOSSIER_DATA = DOSSIER / "data"
 FICHIER_PRIX = "prix_nettoyes_rapproches.csv"
 FICHIER_INDICES = "indices_quotidiens.csv"
 
-st.set_page_config(page_title="IHPC | Suivi des prix", page_icon="📊", layout="wide")
-st.title("Suivi quotidien des prix — IHPC")
-st.caption("Prototype descriptif pour les relevés IvoirShop et Adjovan. Les indices sont exploratoires.")
+st.set_page_config(page_title="IHPC | Veille des prix", page_icon="📊", layout="wide")
+
+# CSS autonome : l’application reste habillée même si config.toml n’est pas livré.
+# Le chevron filigrane est inline; aucune image externe n’est téléchargée.
+st.markdown("""
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+:root { --anstat-orange:#F39323; --anstat-green:#49655A; --anstat-ink:#1D1D1B; }
+html, body, [class*="css"] { font-family:'Inter',sans-serif; color:var(--anstat-ink); }
+h1,h2,h3,h4 { font-family:'Poppins',sans-serif !important; color:var(--anstat-green) !important; }
+[data-testid="stAppViewContainer"] { background-color:#FAFAF7; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='700' viewBox='0 0 700 700'%3E%3Cpath d='M110 590 350 110 590 590 500 590 350 290 200 590Z' fill='%23000000' fill-opacity='.035'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 80px top 180px; background-size:min(54vw,700px); }
+[data-testid="stHeader"] { background:rgba(250,250,247,.92); }
+[data-testid="stSidebar"] { background:#49655A; }
+[data-testid="stSidebar"] * { color:#fff !important; }
+[data-testid="stSidebar"] [data-baseweb="tag"] { background:#F39323 !important; }
+[data-testid="stSidebar"] input, [data-testid="stSidebar"] [data-baseweb="select"] > div { color:#1D1D1B !important; background:#fff !important; }
+[data-testid="stSidebar"] [data-baseweb="select"] span { color:#1D1D1B !important; }
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] { color:#fff; }
+div[data-testid="stMetric"] { background:rgba(255,255,255,.96); border:1px solid #e6e9e6; border-left:5px solid #F39323; border-radius:12px; padding:16px 18px; box-shadow:0 4px 16px rgba(29,29,27,.07); }
+div[data-testid="stMetricLabel"] { color:#555454; font-weight:600; }
+div[data-testid="stMetricValue"] { color:#49655A; font-family:'Poppins',sans-serif; }
+.stTabs [data-baseweb="tab-list"] { gap:4px; border-bottom:1px solid #dce2dd; }
+.stTabs [data-baseweb="tab"] { color:#49655A; font-weight:600; padding:12px 14px; }
+.stTabs [aria-selected="true"] { color:#49655A !important; border-bottom:3px solid #F39323 !important; }
+.stButton > button, [data-testid="stDownloadButton"] button { background:#F39323; color:#1D1D1B; border:0; border-radius:8px; font-weight:700; }
+.stButton > button:hover, [data-testid="stDownloadButton"] button:hover { background:#EF7911; color:#1D1D1B; }
+[data-testid="stDataFrame"] { border:1px solid #dce2dd; border-radius:10px; overflow:hidden; }
+.anstat-header { display:flex; align-items:center; gap:22px; padding:18px 24px; margin:4px 0 24px; background:#fff; border:1px solid #e6e9e6; border-radius:16px; box-shadow:0 5px 22px rgba(29,29,27,.06); }
+.anstat-brand { min-width:205px; line-height:1.05; }
+.anstat-brand .word { font:800 35px 'Poppins',sans-serif; color:#49655A; letter-spacing:-1.8px; }
+.anstat-brand .a { color:#F39323; }
+.anstat-brand small { display:block; margin-top:5px; color:#555454; font:600 9px 'Inter',sans-serif; letter-spacing:.7px; }
+.anstat-title { border-left:1px solid #e5e8e5; padding-left:22px; }
+.anstat-title h1 { margin:0 !important; font-size:1.78rem !important; }
+.anstat-title h1:after { content:''; display:block; width:72px; height:4px; margin-top:11px; border-radius:5px; background:#F39323; }
+.anstat-title p { margin:.55rem 0 0; color:#555454; font-size:.96rem; }
+.anstat-version { display:inline-block; margin-top:8px; padding:4px 9px; border-radius:999px; background:#F39323; color:#1D1D1B !important; font-size:.75rem; font-weight:700; letter-spacing:.02em; }
+.anstat-footer { margin-top:36px; padding:18px 8px 8px; border-top:2px solid #F39323; color:#555454; font-size:.84rem; }
+@media(max-width:700px) { .anstat-header{align-items:flex-start;flex-direction:column;gap:12px}.anstat-title{border-left:0;padding-left:0}.anstat-brand{min-width:0} }
+</style>
+""", unsafe_allow_html=True)
+
+# Plotly reçoit le même style dans tous les onglets; les règles de calcul restent inchangées.
+import plotly.io as pio
+pio.templates["anstat"] = pio.templates["plotly_white"]
+pio.templates["anstat"].layout.update(
+    colorway=PALETTE_ANSTAT, paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+    font={"family":"Inter, sans-serif", "color":CHARTE["noir"]},
+    title={"font":{"family":"Poppins, sans-serif", "color":CHARTE["vert"]}},
+    xaxis={"gridcolor":CHARTE["gris_clair"], "zerolinecolor":CHARTE["gris_clair"]},
+    yaxis={"gridcolor":CHARTE["gris_clair"], "zerolinecolor":CHARTE["gris_clair"]},
+)
+px.defaults.template = "anstat"
+px.defaults.color_discrete_map = {"ivoirshop":CHARTE["orange"], "IvoirShop":CHARTE["orange"], "adjovan":CHARTE["vert"], "Adjovan":CHARTE["vert"], "Tous sites":CHARTE["gris_fonce"]}
+
+# Bandeau de marque : si aucun logo institutionnel n’est présent, texte stylisé sans erreur.
+logo = DOSSIER / "assets" / "logo_anstat.png"
+if logo.exists():
+    import base64
+    _logo_data = base64.b64encode(logo.read_bytes()).decode("ascii")
+    _marque = f'<img src="data:image/png;base64,{_logo_data}" alt="Anstat — Agence Nationale de la Statistique" style="max-width:190px;max-height:72px;object-fit:contain">'
+else:
+    _marque = '<div class="anstat-brand"><div class="word"><span class="a">A</span>nstat</div><small>AGENCE NATIONALE DE LA STATISTIQUE</small></div>'
+
+DOSSIER
 
 
 @st.cache_data(show_spinner=False)
@@ -152,6 +224,16 @@ if prix.empty:
     st.error("Aucune observation avec une date et un prix valides.")
     st.stop()
 
+# Date de collecte affichée à partir du champ déjà présent dans le CSV.
+_date_derniere_collecte = prix["date"].max()
+_date_affichee = _date_derniere_collecte.strftime("%d/%m/%Y") if pd.notna(_date_derniere_collecte) else "non renseignée"
+st.markdown(
+    f'<section class="anstat-header">{_marque}<div class="anstat-title">'
+    f'<h1>Tableau de bord IHPC — Veille des prix en ligne</h1>'
+    f'<p>Sources IvoirShop / Adjovan · Dernière collecte : {_date_affichee}</p></div></section>',
+    unsafe_allow_html=True,
+)
+
 indices = charger_csv(FICHIER_INDICES)
 if not indices.empty and {"date", "indice", "niveau", "site"}.issubset(indices.columns):
     indices["date"] = pd.to_datetime(indices["date"], errors="coerce")
@@ -161,6 +243,12 @@ if not indices.empty and {"date", "indice", "niveau", "site"}.issubset(indices.c
 else:
     indices = calculer_indices(prix)
     st.sidebar.info("Indice quotidien recalculé à base fixe : CSV d'indices absent ou incomplet.")
+# Le calcul local renvoie des dates texte ; on les convertit comme celles du CSV d’indices.
+if not indices.empty:
+    indices["date"] = pd.to_datetime(indices["date"], errors="coerce")
+    indices["indice"] = pd.to_numeric(indices["indice"], errors="coerce")
+    if "variation_jour_pct" in indices:
+        indices["variation_jour_pct"] = pd.to_numeric(indices["variation_jour_pct"], errors="coerce")
 
 # Filtres partagés par les sections du tableau de bord.
 dates = sorted(prix["date"].dt.date.dropna().unique())
@@ -181,16 +269,24 @@ with st.sidebar:
     categories_selectionnees = st.multiselect("Catégories", categories, default=categories)
     produits = sorted(prix["libelle_produit"].unique())
     produit_compare = st.selectbox("Produit à comparer", produits) if produits else None
+    st.markdown('<div class="anstat-version">v3 – charte Anstat</div>', unsafe_allow_html=True)
 
 filtre = prix[prix["site"].isin(sites_selectionnes) & prix["categorie"].isin(categories_selectionnees)].copy()
 filtre = filtre[filtre["date"].dt.date.between(debut, fin)]
+# Les indices par défaut proviennent du CSV exporté. Si une catégorie est écartée,
+# on les recalcule sur toutes les dates de la sélection (avant le filtre temporel),
+# afin de garder une base fixe et de faire suivre le filtre de catégorie.
+if len(categories_selectionnees) < len(categories):
+    source_indices = prix[prix["site"].isin(sites_selectionnes)
+                          & prix["categorie"].isin(categories_selectionnees)].copy()
+    indices = calculer_indices(source_indices)
 indices_filtres = indices.copy()
 if not indices_filtres.empty:
     indices_filtres = indices_filtres[indices_filtres["date"].dt.date.between(debut, fin)]
     indices_filtres = indices_filtres[indices_filtres["site"].isin(sites_selectionnes + ["Tous sites"])]
 
 onglets = st.tabs(["Synthèse", "Indices", "Comparaison des sites", "Hausses/Baisses et contributions",
-                   "Promotions", "Qualité des données", "Données"])
+                   "Promotions", "Volatilité & distributions", "Qualité des données", "Données"])
 
 with onglets[0]:
     st.subheader("Synthèse de la période")
@@ -218,7 +314,7 @@ with onglets[1]:
         coicop = indices_filtres[indices_filtres["niveau"].astype(str).str.startswith("coicop_")]
         if not coicop.empty:
             coicop["serie"] = coicop["niveau"].astype(str) + " — " + colonne_ou(coicop, "code_niveau", "").astype(str)
-            st.plotly_chart(px.line(coicop.sort_values("date"), x="date", y="indice", color="serie", line_dash="site", markers=True,
+            st.plotly_chart(px.line(coicop.sort_values("date"), x="date", y="indice", color="site", line_dash="serie", markers=True,
                                     title="Indices COICOP"), use_container_width=True)
             if "variation_jour_pct" in coicop:
                 st.dataframe(coicop.sort_values("date").groupby(["site", "niveau", "code_niveau"], dropna=False).tail(1)
@@ -261,7 +357,7 @@ with onglets[3]:
             droite.dataframe(dernier.nlargest(10, "variation_jour_pct")[colonnes], hide_index=True, use_container_width=True)
             dernier["contribution_approx_pct"] = dernier["variation_jour_pct"]
             st.plotly_chart(px.bar(dernier.sort_values("contribution_approx_pct"), x="code_variete", y="contribution_approx_pct",
-                                   color="site", title="Contributions approchées — variation des indices variété"), use_container_width=True)
+                                   color="site", title="Contributions approchées — variation des indices variété", color_discrete_map={"ivoirshop":CHARTE["orange"], "adjovan":CHARTE["vert"]}), use_container_width=True)
             st.caption("Contribution approchée, non officielle : variation des indices de variété, sans calcul d'effet budgétaire.")
 
 with onglets[4]:
@@ -278,22 +374,74 @@ with onglets[4]:
         st.info("Aucune observation promotionnelle dans la sélection.")
 
 with onglets[5]:
+    st.subheader("Volatilité et distribution des variations")
+    # On mesure les changements entre deux relevés successifs du même produit et du même site.
+    # Les intervalles peuvent être irréguliers : il ne s’agit donc pas d’une volatilité annualisée.
+    historique = filtre.sort_values("date").copy()
+    historique["variation_prix_pct"] = historique.groupby(["site", "cle_produit"], dropna=False)["prix"].pct_change() * 100
+    variations = historique.dropna(subset=["variation_prix_pct"]).copy()
+    if variations.empty:
+        st.info("Il faut au moins deux observations datées d'un même produit et site pour mesurer les variations.")
+    else:
+        # Résume la forme de la distribution sans supprimer les valeurs extrêmes du tableau.
+        part_stable = float(variations["variation_prix_pct"].abs().lt(0.1).mean())
+        part_baisse = float(variations["variation_prix_pct"].lt(-0.1).mean())
+        part_hausse = float(variations["variation_prix_pct"].gt(0.1).mean())
+        med_var = float(variations["variation_prix_pct"].median())
+        st.info(f"Sur les variations observées : {part_stable:.0%} sont quasi stables (±0,1 %), "
+                f"{part_baisse:.0%} sont en baisse et {part_hausse:.0%} en hausse. "
+                f"La variation médiane est de {med_var:+.2f} %. Ces constats sont descriptifs, sans extrapolation.")
+
+        # Le graphique limite l’axe aux 1er et 99e percentiles pour rendre le cœur visible.
+        # Les observations complètes restent consultables dans le tableau plus bas.
+        borne_basse, borne_haute = variations["variation_prix_pct"].quantile([0.01, 0.99])
+        centre = variations[variations["variation_prix_pct"].between(borne_basse, borne_haute)].copy()
+        if not centre.empty:
+            st.plotly_chart(px.histogram(centre, x="variation_prix_pct", color="site", nbins=40,
+                                         title="Distribution des variations successives de prix (%)",
+                                         labels={"variation_prix_pct": "Variation entre relevés (%)"}),
+                            use_container_width=True)
+            st.caption("L’histogramme masque uniquement les 1 % les plus bas et les 1 % les plus hauts pour la lisibilité; les données brutes restent conservées.")
+
+        resume_vol = variations.groupby(["site", "categorie"], dropna=False).agg(
+            observations=("variation_prix_pct", "size"),
+            variation_mediane_pct=("variation_prix_pct", "median"),
+            dispersion_iqr_pct=("variation_prix_pct", lambda x: x.quantile(0.75) - x.quantile(0.25)),
+            variation_absolue_mediane_pct=("variation_prix_pct", lambda x: x.abs().median())
+        ).reset_index()
+        # L’IQR décrit l’écart des 50 % centraux et résiste mieux aux extrêmes que l’écart-type.
+        st.markdown("**Dispersion robuste par site et catégorie**")
+        st.dataframe(resume_vol.sort_values("dispersion_iqr_pct", ascending=False), hide_index=True, use_container_width=True)
+        st.markdown("**Variations observées les plus fortes**")
+        st.dataframe(variations.reindex(variations["variation_prix_pct"].abs().sort_values(ascending=False).index)
+                     [["date", "site", "categorie", "libelle_produit", "variation_prix_pct"]].head(20),
+                     hide_index=True, use_container_width=True)
+
+with onglets[6]:
     st.subheader("Qualité du rapprochement")
     apparie = colonne_ou(filtre, "apparie", False).astype(str).str.lower().isin(["true", "1", "oui"])
     qualite = filtre.assign(_apparie=apparie).groupby("site", as_index=False).agg(observations=("prix", "size"), appariees=("_apparie", "sum"))
     if not qualite.empty:
         qualite["score_rapprochement_pct"] = 100 * qualite["appariees"] / qualite["observations"].replace(0, np.nan)
-        st.plotly_chart(px.bar(qualite, x="site", y="score_rapprochement_pct", title="Score de rapprochement"), use_container_width=True)
+        st.plotly_chart(px.bar(qualite, x="site", y="score_rapprochement_pct", color="site", title="Score de rapprochement"), use_container_width=True)
         st.dataframe(qualite, hide_index=True, use_container_width=True)
     st.subheader("Disponibilité des produits")
-    dispo = filtre.groupby([filtre["date"].dt.date, "site"], as_index=False).agg(produits_disponibles=("libelle_produit", "nunique"))
+    disponibilite = filtre.assign(jour=filtre["date"].dt.date)
+    dispo = disponibilite.groupby(["jour", "site"], as_index=False).agg(produits_disponibles=("libelle_produit", "nunique"))
     if not dispo.empty:
-        st.plotly_chart(px.line(dispo, x="date", y="produits_disponibles", color="site", markers=True), use_container_width=True)
+        st.plotly_chart(px.line(dispo, x="jour", y="produits_disponibles", color="site", markers=True), use_container_width=True)
     else:
         st.info("Aucune donnée de disponibilité à afficher.")
 
-with onglets[6]:
+with onglets[7]:
     st.subheader("Tableau filtré et téléchargement")
     st.dataframe(filtre, hide_index=True, use_container_width=True)
     st.download_button("Télécharger les données filtrées (CSV)", filtre.to_csv(index=False).encode("utf-8-sig"),
                        file_name="prix_filtres.csv", mime="text/csv")
+
+
+# Pied de page institutionnel et rappel exploratoire, sans modifier les indicateurs.
+st.markdown("""
+<div class="anstat-footer"><span class="anstat-version">v3 – charte Anstat</span><br><strong>ANSTAT — Agence Nationale de la Statistique</strong> · Prototype exploratoire<br>
+Les indices et constats présentés sont descriptifs et exploratoires; ils ne constituent pas une publication officielle. Les variations dépendent des produits appariés, de la période et des filtres sélectionnés. Les prix extrêmes et observations manquantes ne sont pas imputés/supprimés par le dashboard.</div>
+""", unsafe_allow_html=True)
