@@ -229,7 +229,7 @@ _date_derniere_collecte = prix["date"].max()
 _date_affichee = _date_derniere_collecte.strftime("%d/%m/%Y") if pd.notna(_date_derniere_collecte) else "non renseignée"
 st.markdown(
     f'<section class="anstat-header">{_marque}<div class="anstat-title">'
-    f'<h1>Tableau de bord IHPC — Veille des prix en ligne</h1>'
+    f'<h1>Tableau de bord IPC — Veille des prix en ligne</h1>'
     f'<p>Sources IvoirShop / Adjovan · Dernière collecte : {_date_affichee}</p></div></section>',
     unsafe_allow_html=True,
 )
